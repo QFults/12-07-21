@@ -95,6 +95,14 @@
 //     }
 //   })
 
+//   const mod = (name, username, email, phone) => ({
+//     ...user(name, username, email),
+//     phone,
+//     canBan: true,
+//     canKick: true,
+//     canMove: true
+//   })
+
 // const user1 = user('John Doe', 'johndoe', 'johndoe@gmail.com')
 // const user2 = user('Jane Doe', 'janedoe', 'janedoe@gmail.com')
 
@@ -106,3 +114,18 @@
 
 // user1.printInfo()
 // user2.printInfo()
+
+// const mod1 = mod('Jack Doe', 'jackdoe', 'jackdoe@gmail.com', 1234567890)
+
+// console.log(mod1)
+
+// let obj1 = {
+//   a: 5
+// }
+
+// let obj2 = {
+//   ...obj1,
+//   b: 2
+// }
+
+// console.log(obj2)
