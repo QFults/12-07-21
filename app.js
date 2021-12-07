@@ -54,3 +54,28 @@
 
 // user1.printInfo()
 // user2.printInfo()
+
+const user = (name, username, email) => ({
+    name, username, email,
+    level: 1,
+    printInfo() {
+      console.log(`
+      Name: ${this.name}
+      Username: ${this.username}
+      Email: ${this.email}
+      Level: ${this.level}
+    `)
+    }
+  })
+
+const user1 = user('John Doe', 'johndoe', 'johndoe@gmail.com')
+const user2 = user('Jane Doe', 'janedoe', 'janedoe@gmail.com')
+
+user2.email = 'something else'
+user2.level = 2
+
+console.log(user1)
+console.log(user2)
+
+user1.printInfo()
+user2.printInfo()
